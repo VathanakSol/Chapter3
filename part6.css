@@ -1,0 +1,67 @@
+using System;
+using System.ComponentModel;
+
+namespace Chapter3
+{
+    class Part6
+    {
+        static void Main(String[] args)
+        {
+
+            int i = 1;
+            do
+            {
+                Console.Write(i + " ");
+                i++;
+            } while (i <= 5);
+            Console.WriteLine("\n===============================");
+
+            for (int j=5; j>=1; j--)
+            {
+                Console.Write(j + " ");
+            }
+            Console.WriteLine("\n=======================================");
+            for(int k=0; k<=10; k += 2)
+            {
+                Console.Write(k + " ");
+            }
+            Console.WriteLine("\n=================================");
+            /*int level;
+            Console.Write("Enter Level(Please don't enter 100 up so will loop forever:)= ");
+            level = int.Parse(Console.ReadLine());
+            *//*while(level < 100)
+            {
+                level -= 10;
+                Console.WriteLine($"Your current level is {level}");
+            }*//*
+            do
+            {
+                level -= 10;
+                
+            } while (level < 100);
+            Console.WriteLine($"Your current level is {level}");*/
+            /*Console.WriteLine("===================================");*/
+            double score;
+            do
+            {
+                Console.Write("Enter Score(Between 0 and 100 only): --> --> --> --> ");
+                score = double.Parse(Console.ReadLine());
+            } while (!(score >= 0 && score <= 100));
+            Console.WriteLine($"Your correct score is {score}");
+
+            Console.WriteLine("=============================");
+            int n;
+            long sum = 0;
+            Console.Write("Enter n= ");
+            n = int.Parse(Console.ReadLine());
+            for(int r=1; r<=n; r++)
+            {
+                sum += r;
+            }
+            Console.WriteLine($"Sum = {sum}");
+            Console.WriteLine("Don't ask me why don't display all numbers because I'm lazy XD");
+
+            Console.ReadKey();
+        }
+    }
+}
